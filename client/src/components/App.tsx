@@ -16,6 +16,7 @@ function App() {
       </Router>
       {location.pathname !== "/login" &&
         location.pathname !== "/users" &&
+        location.pathname !== "/dash" &&
         location.pathname !== "/signup" && <Footer />}
     </div>
   );

@@ -7,6 +7,7 @@ import Contact from "../pages/footer/Contact";
 import Login from "../pages/login/Login";
 import Register from "../pages/login/SignUp";
 import Purpose from "../pages/footer/Purpose";
+import Main from "../topics/Main";
 
 class Routes extends React.Component {
   render() {
@@ -18,7 +19,7 @@ class Routes extends React.Component {
         <Route path="/contact" component={Contact} />
         <Route path="/login" component={Login} />
         <Route path="/signup" component={Register} />
-        <Route path="/users" component={Home} />
+        <Route path="/dash" component={Main} />
         <Route component={NotFound} />
       </Switch>
     );
