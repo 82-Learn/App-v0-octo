@@ -7,5 +7,6 @@ import (
 )
 
 func Routers(app *fiber.App) {
+	app.Get("/", middleware.Dash)
 	app.Get("/dash", middleware.Dash)
 }
