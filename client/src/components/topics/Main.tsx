@@ -119,17 +119,17 @@ const Main = () => {
 
   return (
     <TagComponent>
-      <Header>Demo Dashboard Topic 1</Header>
+      <Header>Dashboard</Header>
       <Sidebar></Sidebar>
       <Body>
-        <div className="container mt-5">
-          <h1 className="text-white mb-3">Outline</h1>
-          <ul className="list-group mb-3">
+        <div>
+          <h1>Outline</h1>
+          <ul>
             {posts.map((post) => (
-              <li key={post.id} className="list-group-item">
-                {post.first_name}
-                {post.last_name}
-              </li>
+              <>
+                <li key={post.id}>{post.first_name}</li>
+                <li key={post.id}>{post.last_name}</li>
+              </>
             ))}
           </ul>
         </div>

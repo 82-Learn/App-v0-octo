@@ -1,11 +1,12 @@
 import * as React from "react";
-import Nav from "./Nav";
-
+import TopNav from "./TopNav";
+import SideNav from "./SideNav";
 class Layout extends React.Component {
   render() {
     return (
       <div>
-        <Nav />
+        <TopNav />
+        <SideNav />
         {this.props.children}
       </div>
     );

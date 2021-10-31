@@ -19,15 +19,15 @@ const Column = styled.div`
   display: flex;
   flex-direction: column;
   text-align: left;
-  margin-left: 60px;
+  margin-left: 20px;
 `;
 
 const Heading = styled.p`
-  font-size: 24px;
+  font-size: 15px;
   color: white;
   margin-bottom: 40px;
-  font-weight: bold;
   text-align: center;
+  color: #ff6600;
 `;
 
 const Container = styled.div`
@@ -41,7 +41,7 @@ const Container = styled.div`
 const FooterLink = styled.div`
   color: white;
   margin-bottom: 20px;
-  font-size: 18px;
+  font-size: 14px;
   text-decoration: none;
   text-align: center;
   cursor: pointer;
@@ -49,7 +49,6 @@ const FooterLink = styled.div`
 
   &:hover {
     background-color: #ff6600;
-    border-radius: 30px;
   }
 `;
 
@@ -58,24 +57,24 @@ const Footer = () => (
     <Container>
       <Row>
         <Column>
-          <Heading>About 82</Heading>
+          <Heading>ABOUT 82</Heading>
           <FooterLink onClick={(event) => (window.location.href = "/purpose")}>
-            Purpose 82 Learn
+            PURPOSE
           </FooterLink>
         </Column>
         <Column>
-          <Heading>Contact 82</Heading>
+          <Heading>CONTACT 82</Heading>
           <FooterLink onClick={(event) => (window.location.href = "/contact")}>
-            Contact 82 Learn
+            CONTACT
           </FooterLink>
         </Column>
         <Column>
-          <Heading>Sign Up</Heading>
+          <Heading>JOIN</Heading>
           <FooterLink onClick={(event) => (window.location.href = "/signup")}>
-            Sign up
+            SIGNUP
           </FooterLink>
           <FooterLink onClick={(event) => (window.location.href = "/login")}>
-            Login
+            LOGIN
           </FooterLink>
         </Column>
       </Row>

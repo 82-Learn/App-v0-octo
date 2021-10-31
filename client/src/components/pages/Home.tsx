@@ -1,13 +1,9 @@
 import * as React from "react";
 import styled from "styled-components";
-import Outline from "../topics/Outline";
 
 const TagComponent = styled.div`
-  width: 100%;
-  padding: 80px 16px;
-  margin: 0px auto;
+  min-height: 100vh;
   box-sizing: border-box;
-  color: white;
   text-align: center;
 `;
 
@@ -19,12 +15,25 @@ const Header = styled.h1`
   min-height: 10vh;
 `;
 
+const StyledText = styled.div`
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+`;
+
 class Home extends React.Component {
   render() {
     return (
       <TagComponent>
         <Header>Welcome to 82 Learn</Header>
-        <Outline />
+        <StyledText>
+          <p>Our object is to improve human learning speed.</p>
+        </StyledText>
       </TagComponent>
     );
   }

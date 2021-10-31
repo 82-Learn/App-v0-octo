@@ -9,32 +9,28 @@ const Navbar = styled.div`
   text-decoration: none;
 `;
 
-const Logo = styled.img``;
-
 const NavLinks = styled.ul`
   & li {
-    float: left;
+    float: right;
   }
 
   & a {
-    font-size: 1.4rem;
+    font-size: 15px;
     color: white;
     text-transform: uppercase;
     text-decoration: none;
     padding: 15px 15px;
     cursor: pointer;
     background-color: #010d11;
-    border-radius: 30px;
     line-height: 1em;
 
     &:hover {
       background-color: #ff6600;
-      border-radius: 30px;
     }
   }
 `;
 
-class Nav extends React.Component {
+class TopNav extends React.Component {
   render() {
     return (
       <Navbar>
@@ -54,4 +50,4 @@ class Nav extends React.Component {
   }
 }
 
-export default Nav;
+export default TopNav;

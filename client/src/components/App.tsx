@@ -10,7 +10,9 @@ function App() {
   return (
     <div>
       <GlobalStyle />
-      {location.pathname !== "/signup" && <Layout />}
+      {location.pathname !== "/signup" && location.pathname !== "/login" && (
+        <Layout />
+      )}
       <Router>
         <Routes />
       </Router>
